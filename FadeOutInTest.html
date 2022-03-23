@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a Website</title>
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+       	 $("#fade_out").click(function(){
+            $("box").fadeOut("slow"); 
+       	 })
+       	 $("#fade_in").click(function(){
+            $("box").fadeIn("fast"); 
+       	 })
+       	 $("#fade_to").click(function(){
+            $("box").fadeTo("slow", 0.3); 
+       	 })
+       }); 
+    </script>
+    <style type="text/css">
+    	#box {
+    		width : 300px; 
+    		height : 80px;
+    		background : lightgreen;
+    		border : 5px solid white;
+            padding :5px;   
+    	}
+    </style>	
+</head>
+<body bgcolor="black">
+<body>
+    <button id="fade_out">Fade out</button>
+    <button id="fade_in">Fade in</button>
+    <button id="fade_to">Fade to</button>
+    <br></br>
+    <div id="box"></div>
+</body>
+</html>
